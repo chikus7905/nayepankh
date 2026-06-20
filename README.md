@@ -11,6 +11,7 @@ A responsive frontend recreation of the **NayePankh Foundation** website develop
 ## 🚀 Live Demo
 
 Add your deployed website link here:
+https://chikus7905.github.io/nayepankh/index.html
 
 ---------------------
 
