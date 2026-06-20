@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Now | NayePankh Foundation</title>
+  <meta name="description" content="Support NayePankh Foundation. Make secure donations online for child education, hunger drives, healthcare, and get 50% tax deductions under Section 80G.">
+  <meta name="keywords" content="Donate NGO, Sponsor education, tax deduction 80G, UP registered charity, support food drive">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/hero-illustration.png">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="main-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo" id="header-logo">
+        <span class="logo-wing"><i class="fas fa-feather-alt"></i></span>
+        <span class="logo-text">NayePankh</span>
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="certificates.html" class="nav-link" id="nav-certificates">Our Certificates</a></li>
+          <li><a href="news.html" class="nav-link" id="nav-news">News & Recognition</a></li>
+          <li><a href="contact.html" class="nav-link" id="nav-contact">Contact Us</a></li>
+          <li><a href="donate.html" class="btn-donate-nav active" id="nav-donate-btn">Donate <i class="fas fa-heart"></i></a></li>
+        </ul>
+      </nav>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" id="hamburger-btn">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero sub-header -->
+  <section class="section" style="padding-top: 140px; padding-bottom: 40px; background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.05) 0%, transparent 80%);">
+    <div class="container text-center" style="max-width: 800px; margin: 0 auto;">
+      <span class="section-subtitle">Support Us</span>
+      <h1 class="hero-title" style="font-size: 44px; margin-bottom: 16px;">Make a Difference</h1>
+      <p class="hero-description" style="margin-bottom: 0;">Your contribution directly finances educational kits, raw food, sanitization camps, and clothing drives in rural suburbs.</p>
+    </div>
+  </section>
+
+  <!-- Donation Portal Grid -->
+  <section class="section" id="donate-portal">
+    <div class="container donate-grid">
+      
+      <!-- Info Left -->
+      <div class="donate-info">
+        <h2>Why Your Support Matters</h2>
+        <p style="color: var(--text-muted); margin-bottom: 24px; line-height: 1.8;">NayePankh Foundation is driven by a passionate network of student volunteers. Because we maintain nominal administrative overhead, over 90% of your contributions go straight toward purchasing raw supplies, sponsoring tuition fees, and distributing resources to slums.</p>
+        
+        <div class="donate-benefit-card" id="benefit-80g">
+          <div class="benefit-icon"><i class="fas fa-percent"></i></div>
+          <div class="benefit-text">
+            <h4>80G Tax Exemption (50%)</h4>
+            <p>Save tax on your earnings while assisting others. All transactions issue legal receipts instantly.</p>
+          </div>
+        </div>
+        
+        <div class="donate-benefit-card" id="benefit-secure">
+          <div class="benefit-icon" style="color: var(--primary); background: rgba(99, 102, 241, 0.1);"><i class="fas fa-lock"></i></div>
+          <div class="benefit-text">
+            <h4>100% Encrypted Transactions</h4>
+            <p>Your payment details are protected via industry standard SSL validation methods.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Form Card Right -->
+      <div class="donate-form-card">
+        <form id="donation-form" novalidate>
+          <input type="hidden" id="selected-cause" value="general">
+          
+          <!-- Causes tabs -->
+          <label class="form-group label">Select Cause</label>
+          <div class="form-tabs">
+            <button type="button" class="tab-btn active" data-cause="general">General</button>
+            <button type="button" class="tab-btn" data-cause="food">Food Drive</button>
+            <button type="button" class="tab-btn" data-cause="education">Education</button>
+            <button type="button" class="tab-btn" data-cause="hygiene">Hygiene</button>
+          </div>
+          
+          <!-- Preset amount buttons -->
+          <label class="form-group label">Select Amount (INR)</label>
+          <div class="amount-grid">
+            <button type="button" class="amount-btn" data-amount="500">₹500</button>
+            <button type="button" class="amount-btn" data-amount="1000">₹1000</button>
+            <button type="button" class="amount-btn active" data-amount="2000">₹2000</button>
+            <button type="button" class="amount-btn" data-amount="5000">₹5000</button>
+          </div>
+          
+          <!-- Custom amount input -->
+          <div class="form-group">
+            <label for="custom-amount">Or Enter Custom Amount (₹)</label>
+            <input type="number" class="form-control" id="custom-amount" value="2000" min="100">
+          </div>
+          
+          <!-- Donor Info -->
+          <div class="form-group">
+            <label for="donor-name">Full Name</label>
+            <input type="text" class="form-control" id="donor-name" placeholder="John Doe" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="donor-email">Email Address</label>
+            <input type="email" class="form-control" id="donor-email" placeholder="john@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="donor-phone">Mobile Number</label>
+            <input type="tel" class="form-control" id="donor-phone" placeholder="+91 8318500748" required>
+          </div>
+          
+          <!-- Tax Savings Calculator -->
+          <div class="tax-savings-calc" id="savings-box">
+            <span>Estimated 80G Tax Savings:</span>
+            <strong>₹1,000</strong>
+          </div>
+          
+          <button type="submit" class="btn-donate-submit" id="submit-donation">Proceed to Payment <i class="fas fa-heart"></i></button>
+        </form>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col" id="footer-col-about">
+        <a href="index.html" class="logo" style="margin-bottom: 20px;">
+          <span class="logo-wing"><i class="fas fa-feather-alt"></i></span>
+          <span class="logo-text">NayePankh</span>
+        </a>
+        <p class="footer-desc">A UP Government registered NGO (KAP/04397/2021-2022) dedicated to uplifting underprivileged communities through education, health support, and essential distribution drives.</p>
+        <div class="social-links">
+          <a href="http://www.facebook.com/nayepankhfoundation" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="http://www.instagram.com/nayepankhfoundation" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/nayepankh" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@nayepankhfoundation" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="http://www.twitter.com/nayepankh" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col" id="footer-col-links">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="certificates.html">Our Certificates</a></li>
+          <li><a href="news.html">News & Press</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col" id="footer-col-exemption">
+        <h4>Tax Exemptions</h4>
+        <ul class="footer-links">
+          <li><a href="donate.html">80G Benefit Guide</a></li>
+          <li><a href="certificates.html">12A Registration Details</a></li>
+          <li><a href="certificates.html">NGO Darpan Certification</a></li>
+          <li><a href="donate.html">Support Education</a></li>
+          <li><a href="donate.html">Support Food Campaigns</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col" id="footer-col-contact">
+        <h4>Contact NGO</h4>
+        <p class="footer-desc" style="margin-top: 0;"><i class="fas fa-envelope text-orange" style="color:var(--accent);"></i> contact@nayepankh.com</p>
+        <p class="footer-desc" style="margin-top: 10px;"><i class="fas fa-phone text-orange" style="color:var(--accent);"></i> +91-8318500748</p>
+        <p class="footer-desc" style="margin-top: 10px;"><i class="fas fa-map-marker-alt text-orange" style="color:var(--accent);"></i> Kanpur, Uttar Pradesh, India</p>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p id="copyright-text">&copy; 2026 NayePankh Foundation. All Rights Reserved. Society Reg No: KAP/04397/2021-2022 | 80G URN: AAGAN9381EF20227.</p>
+      <div class="footer-bottom-links" id="footer-policy-links">
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="refund.html">Refund Policy</a>
+        <a href="shipping.html">Shipping Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
